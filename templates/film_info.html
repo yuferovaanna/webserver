@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="jumbotron">
+            <img src="{{ url_for('static', filename='img/poster/' + film[4]) }}" alt="картинка" />
+          <h1 class="display-4">{{ film[1] }}</h1>
+          <p class="lead">Стоимость: {{ film[2] }}</p>
+          <hr class="my-4">
+            <p>Магазин : {{ store }}</p>
+        </div>
+        <a href="/index"> <button type="button" class="btn btn-outline-info">Назад</button></a>
+{% endblock %}

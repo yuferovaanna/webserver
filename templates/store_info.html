@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="jumbotron">
+          <h1 class="display-4">{{ store[1] }}</h1>
+          <p class="lead">Адрес: {{ store[2] }}</p>
+          <hr class="my-4">
+        </div>
+        <a href="/store_admin"> <button type="button" class="btn btn-outline-info">Назад</button></a>
+{% endblock %}
